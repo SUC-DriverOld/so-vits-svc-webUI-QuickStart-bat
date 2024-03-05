@@ -115,6 +115,14 @@ set PYTHON_VERSION_REQUIRED=3.8
 set PYTORCH_INSTALL_COMMAND=pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu117
 ```
 
+## 未来计划
+
+- [ ] 增加预处理模型的自动下载功能
+- [ ] 增加一键预处理脚本
+- [ ] 增加一键训练脚本
+- [ ] 改进 webUI
+- [ ] 其他 features...
+
 ## 感谢名单
 
 - [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) 官方仓库
