@@ -76,12 +76,15 @@ SoVITS webUI QuickStart bat，一个 [so-vits-svc](https://github.com/svc-develo
 > 1. 此处请注意输出信息的 CUDA 状态，若为 True 则表明 你的 CUDA 与 pytorch 版本匹配，可以使用 GPU 相关功能；若为 False 请检查你的 CUDA 版本或修改启动参数中的 Pytorch 安装命令，参考下方启动参数。
 > 2. 使用 conda 第一次启动时请在激活的 conda 环境中 `call webUI-user.bat` 启动脚本，此时脚本会自动安装相关依赖，安装过程比较缓慢，请耐心等待所有依赖安装完成。下次启动你可用直接通过双击 `webUI-user.bat` 启动。
 > 3. 如需重新创建虚拟环境，请删除 `%VENV_DIR%` 目录后重新运行此脚本。`%VENV_DIR%` 在脚本中有定义，请参考下方启动参数。
+> 4. 若在安装依赖的时候遇到编译错误，请安装 `Microsoft Visual C++ 15.0` 运行库。
 
 ### 2. 本地 Python 环境
 
 前往 [Python 官网](https://www.python.org/) 下载 `Python3.8.9` 版本。安装时请别忘了勾选将 Python 添加至系统环境变量。
 
 安装好 python 后，直接双击 `webUI-user.bat` 即可启动 webUI。第一次启动会进行相关依赖的安装，此过程较为缓慢。等待一切依赖都安装完成后，控制台也会输出类似上面 conda 环境中第 4 条的内容。并且相关注意事项也请参考上面 conda 环境最后的 **注意**。
+
+若在安装依赖的时候遇到编译错误，请安装 `Microsoft Visual C++ 15.0` 运行库。
 
 ## 启动参数
 
