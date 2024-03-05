@@ -4,7 +4,7 @@ SoVITS webUI QuickStart bat，一个 [so-vits-svc](https://github.com/svc-develo
 
 ✨ 我写的一个 [so-vits-svc 中文本地部署/训练/推理/使用帮助文档](https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents)
 
-> [!NOTE] 注意
+> [!NOTE]
 >
 > 1. 此脚本目前处于公开测试阶段，可能存在不稳定情况。如果您想对此仓库作贡献或给出任何建议，欢迎提出 Issue 或 Pull Request。
 > 2. 此脚本仅用于快速安装项目依赖和快速启动 webUI，你还需要自己参考官方文档下载预训练模型，训练集预处理，训练模型等步骤。
@@ -32,7 +32,7 @@ SoVITS webUI QuickStart bat，一个 [so-vits-svc](https://github.com/svc-develo
 
 请确你的电脑中已安装 CUDA 相关环境。使用`nvidia-smi.exe`命令查看显卡驱动版本和对应支持的 CDUA 版本，并前往 [NVIDIA-Developer](https://developer.nvidia.com/) 官网下载与 **系统对应** 的 Cuda 版本。
 
-> [!NOTE] 注意
+> [!NOTE]
 >
 > 1. 此处建议安装 [CUDA11.7](<(https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local)>) (理论上 CUDA11.8 也是可用的，但并未测试过)。
 > 2. 安装完成后，你可用通过 `nvcc -V` 命令来验证是否安装成功。
@@ -71,7 +71,7 @@ SoVITS webUI QuickStart bat，一个 [so-vits-svc](https://github.com/svc-develo
     To create a public link, set `share=True` in `launch()`.
    ```
 
-> [!NOTE] 注意
+> [!NOTE]
 >
 > 1. 此处请注意输出信息的 CUDA 状态，若为 True 则表明 你的 CUDA 与 pytorch 版本匹配，可以使用 GPU 相关功能；若为 False 请检查你的 CUDA 版本或修改启动参数中的 Pytorch 安装命令，参考下方启动参数。
 > 2. 使用 conda 第一次启动时请在激活的 conda 环境中 `call webUI-user.bat` 启动脚本，此时脚本会自动安装相关依赖，安装过程比较缓慢，请耐心等待所有依赖安装完成。下次启动你可用直接通过双击 `webUI-user.bat` 启动。
