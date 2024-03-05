@@ -34,7 +34,7 @@ SoVITS webUI QuickStart bat，一个 [so-vits-svc](https://github.com/svc-develo
 
 > [!NOTE]
 >
-> 1. 此处建议安装 [CUDA11.7](<(https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local)>) (理论上 CUDA11.8 也是可用的，但并未测试过)。
+> 1. 此处建议安装 [CUDA11.7](<(https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local)>) (CUDA11.8 也是可以的，但并未测试过)。
 > 2. 安装完成后，你可用通过 `nvcc -V` 命令来验证是否安装成功。
 
 ### 1. Conda 环境
