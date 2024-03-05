@@ -30,7 +30,7 @@ SoVITS webUI QuickStart bat，一个 [so-vits-svc](https://github.com/svc-develo
 
 ## 快速开始
 
-请确你的电脑中已安装 CUDA 相关环境。使用`nvidia-smi.exe`命令查看显卡驱动版本和对应支持的 CDUA 版本，并前往 [NVIDIA-Developer](https://developer.nvidia.com/) 官网下载与 **系统对应** 的 Cuda 版本。
+请确你的电脑中已安装 CUDA 相关环境。使用 `nvidia-smi.exe` 命令查看显卡驱动版本和对应支持的 CDUA 版本，并前往 [NVIDIA-Developer](https://developer.nvidia.com/) 官网下载与 **系统对应** 的 Cuda 版本。
 
 > [!NOTE]
 >
