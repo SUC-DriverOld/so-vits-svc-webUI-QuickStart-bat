@@ -24,6 +24,7 @@ set REQUIREMENTS_TXT=requirements_win.txt
 set PYTHON_VERSION_REQUIRED=3.8
 
 ::设置PyTorch安装命令，默认安装torch2.0.1+cu117，可前往 https://pytorch.org 复制其他版本的安装命令
+set CUDA_VERSION=11.7
 set PYTORCH_INSTALL_COMMAND=pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu117
 ::#################################################################################################
 
@@ -71,6 +72,9 @@ if exist "%VENV_DIR%\Lib\site-packages\torch" (
     goto :install_requirements
 ) else (
     echo INFO: 正在安装PyTorch
+    if "%CUDA_VERSION%"=="11.7" (
+        %VENV_DIR%\Scripts\python.exe -m pip install networkx==3.0 -i %PIP_INDEX_URL%
+    )
     %VENV_DIR%\Scripts\python.exe -m %PYTORCH_INSTALL_COMMAND%
     if %ERRORLEVEL% EQU 0 (
         cls
