@@ -11,7 +11,7 @@ SoVITS webUI QuickStart bat，一个 [so-vits-svc](https://github.com/svc-develo
 
 ## 准备阶段
 
-你可以直接在 [Release](https://github.com/SUC-DriverOld/so-vits-svc-webUI-QuickStart-bat/releases) 中下载已经将脚本打包到项目中的 [so-vits-svc-webUI-QuickStart-bat.zip](https://github.com/SUC-DriverOld/so-vits-svc-webUI-QuickStart-bat/releases/download/v1.0beta.1/so-vits-svc-4.1-Stable-Packed-with-QuickStart-bat.zip) 压缩文件。解压后可以直接跳转到 **准备阶段** 的第 4 条。
+你可以直接在 [Release](https://github.com/SUC-DriverOld/so-vits-svc-webUI-QuickStart-bat/releases) 中下载已经将脚本打包到项目中的压缩文件。解压后可以直接跳转到 **准备阶段** 的第 4 条。
 
 1. 克隆 [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) 源码。
 
