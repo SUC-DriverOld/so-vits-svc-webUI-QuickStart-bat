@@ -85,7 +85,7 @@ if exist "%VENV_DIR%\Lib\site-packages\torch" (
 :install_requirements
 echo INFO: 正在安装依赖...
 call %VENV_DIR%\Scripts\activate.bat
-%VENV_DIR%\Scripts\python.exe -m pip install --upgrade pip wheel setuptools -r %REQUIREMENTS_TXT% -i %PIP_INDEX_URL%
+%VENV_DIR%\Scripts\python.exe -m pip install --upgrade pip wheel setuptools -i %PIP_INDEX_URL%
 %VENV_DIR%\Scripts\python.exe -m pip install -r %REQUIREMENTS_TXT% -i %PIP_INDEX_URL%
 if %ERRORLEVEL% EQU 0 (
     cls
