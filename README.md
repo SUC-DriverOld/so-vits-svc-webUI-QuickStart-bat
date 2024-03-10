@@ -87,7 +87,7 @@ SoVITS webUI QuickStart bat，一个 [so-vits-svc](https://github.com/svc-develo
 
 ## 启动参数
 
-此部分参数可以在 `webUI-user.bat` 中修改。可修改参数如下：
+此部分参数可以在 `webUI-user.bat` 中修改。可修改参数如下，如果不会修改，请保持默认即可！
 
 ```shell
 ::以下所有环境变量设置都无需添加引号""
