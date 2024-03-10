@@ -11,31 +11,27 @@ SoVITS webUI QuickStart bat，一个 [so-vits-svc](https://github.com/svc-develo
 
 ## 准备阶段
 
-你可以直接在 [Release](https://github.com/SUC-DriverOld/so-vits-svc-webUI-QuickStart-bat/releases) 中下载已经将脚本打包到项目中的压缩文件。解压后可以直接跳转到 **准备阶段** 的第 4 条。
+你可以直接在 [Release](https://github.com/SUC-DriverOld/so-vits-svc-webUI-QuickStart-bat/releases) 中下载已经将脚本打包到项目中的压缩文件。解压后可以直接跳过下面的第 1 步。
 
-1. 克隆 [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) 源码。
+1. 克隆 [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) 源码
 
    ```bash
     git clone https://github.com/svc-develop-team/so-vits-svc.git
    ```
 
-2. 克隆本项目。
+   克隆本项目
 
    ```bash
     git clone https://github.com/SUC-DriverOld/so-vits-svc-webUI-QuickStart-bat.git
    ```
 
-3. 将本项目中的 `requirements_win.txt` 和 `webUI-user.bat` 复制到你克隆的 [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) 项目文件夹中，此时遇到同名文件，请选择 **替换文件**！
-4. 参考 [官方说明文档](https://github.com/svc-develop-team/so-vits-svc#readme) 中的 [#预先下载的模型文件](https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/README_zh_CN.md#-%E9%A2%84%E5%85%88%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%A8%A1%E5%9E%8B%E6%96%87%E4%BB%B6) 以及 [#可选项](https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/README_zh_CN.md#%E5%8F%AF%E9%80%89%E9%A1%B9%E6%A0%B9%E6%8D%AE%E6%83%85%E5%86%B5%E9%80%89%E6%8B%A9) 下载项目需要的预训练底模和声码器。此处你也可以参考我写的 [so-vits-svc 中文本地部署/训练/推理/使用帮助文档](https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents) 中的 [#2.2 预先下载的模型文件](https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents?tab=readme-ov-file#22-%E9%A2%84%E5%85%88%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%A8%A1%E5%9E%8B%E6%96%87%E4%BB%B6) 这一部分内容。
+   将本项目中的 `requirements_win.txt` 和 `webUI-user.bat` 复制到你克隆的 [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) 项目文件夹中，此时遇到同名文件，请选择 **替换文件**！
+
+2. 安装 CUDA 。请先使用 `nvidia-smi.exe` 命令**查看显卡驱动版本和对应支持的最高 CDUA 版本**（若此处最高 CUDA 版本较低请先更新显卡驱动），并前往 [cuda-toolkit](https://developer.nvidia.com/cuda-toolkit) 下载 CUDA（老版本 CUDA 可以在 [cuda-toolkit-archive](https://developer.nvidia.com/cuda-toolkit-archive) 中下载到）。安装完成后，你可用通过 `nvcc -V` 命令来验证是否安装成功。
+3. 下载并安装 [Visual Studio 2022](https://visualstudio.microsoft.com/) 或者 [Microsoft C++ 生成工具](https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/)（体积较前者更小）。**安装组件包“使用 C++的桌面开发”**，执行修改并等待其安装完成即可。
+4. 参考 [so-vits-svc 官方说明文档](https://github.com/svc-develop-team/so-vits-svc#readme) 中的 [#预先下载的模型文件](https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/README_zh_CN.md#-%E9%A2%84%E5%85%88%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%A8%A1%E5%9E%8B%E6%96%87%E4%BB%B6) 以及 [#可选项](https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/README_zh_CN.md#%E5%8F%AF%E9%80%89%E9%A1%B9%E6%A0%B9%E6%8D%AE%E6%83%85%E5%86%B5%E9%80%89%E6%8B%A9) **下载并正确放置项目需要的预训练底模和声码器**。此处你也可以参考我写的 [so-vits-svc 中文本地部署/训练/推理/使用帮助文档](https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents) 中的 [#2.2 预先下载的模型文件](https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents?tab=readme-ov-file#22-%E9%A2%84%E5%85%88%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%A8%A1%E5%9E%8B%E6%96%87%E4%BB%B6) 这一部分内容。
 
 ## 快速开始
-
-请确你的电脑中已安装 CUDA 相关环境。使用 `nvidia-smi.exe` 命令查看显卡驱动版本和对应支持的 CDUA 版本，并前往 [NVIDIA-Developer](https://developer.nvidia.com/) 官网下载与 **系统对应** 的 Cuda 版本。
-
-> [!NOTE]
->
-> 1. 此处建议安装 [CUDA11.7](<(https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local)>) (**CUDA11.7 以上版本也是可以的，但我并没有每个都测试过**)。
-> 2. 安装完成后，你可用通过 `nvcc -V` 命令来验证是否安装成功。
 
 ### 1. Conda 环境
 
@@ -76,15 +72,14 @@ SoVITS webUI QuickStart bat，一个 [so-vits-svc](https://github.com/svc-develo
 > 1. 此处请注意输出信息的 CUDA 状态，若为 True 则表明 你的 CUDA 与 pytorch 版本匹配，可以使用 GPU 相关功能；若为 False 请检查你的 CUDA 版本或修改启动参数中的 Pytorch 安装命令，参考下方启动参数。
 > 2. 使用 conda 第一次启动时请在激活的 conda 环境中 `call webUI-user.bat` 启动脚本，此时脚本会自动安装相关依赖，安装过程比较缓慢，请耐心等待所有依赖安装完成。下次启动你可用直接通过双击 `webUI-user.bat` 启动。
 > 3. 如需重新创建虚拟环境，请删除 `%VENV_DIR%` 目录后重新运行此脚本。`%VENV_DIR%` 在脚本中有定义，请参考下方启动参数。
-> 4. 若在安装依赖的时候遇到编译错误，请安装 `Microsoft Visual C++ 15.0` 运行库。
 
 ### 2. 本地 Python 环境
 
+本地 Python 环境请确保你的系统中只有一个 Python，否则会出现环境冲突。
+
 前往 [Python 官网](https://www.python.org/) 下载 `Python3.8.9` 版本。安装时请别忘了勾选将 Python 添加至系统环境变量。
 
-安装好 python 后，直接双击 `webUI-user.bat` 即可启动 webUI。第一次启动会进行相关依赖的安装，此过程较为缓慢。等待一切依赖都安装完成后，控制台也会输出类似上面 conda 环境中第 4 条的内容。并且相关注意事项也请参考上面 conda 环境最后的 **注意**。
-
-若在安装依赖的时候遇到编译错误，请安装 `Microsoft Visual C++ 15.0` 运行库。
+安装好 python 后，直接双击 `webUI-user.bat` 即可启动 webUI。第一次启动会进行相关依赖的安装，此过程较为缓慢。等待一切依赖都安装完成后，控制台也会输出类似上面 conda 环境中第 4 条的内容。并且相关注意事项也请参考上面[【conda 环境】](#1-conda-环境)最后的 **Note**。
 
 ## 启动参数
 
