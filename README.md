@@ -8,7 +8,7 @@ SoVITS webUI QuickStart bat，一个 [so-vits-svc](https://github.com/svc-develo
 
 > [!NOTE]
 >
-> ✨ 我写的一个 [so-vits-svc 中文本地部署/训练/推理/使用帮助文档](https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents)
+> ✨ 我写的一个 [so-vits-svc 本地部署/训练/推理/使用帮助文档](https://github.com/SUC-DriverOld/so-vits-svc-Deployment-Documents)
 >
 > 1. 此脚本目前处于公开测试阶段，可能存在不稳定情况。如果您想对此仓库作贡献或给出任何建议，欢迎提出 Issue 或 Pull Request。
 > 2. 此脚本仅用于快速安装项目依赖和快速启动 webUI，你还需要自己参考官方文档下载预训练模型，训练集预处理，训练模型等步骤。
