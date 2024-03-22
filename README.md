@@ -2,6 +2,8 @@
 
 # so-vits-svc-webUI-QuickStart-bat
 
+[English](README.md) | [简体中文](README_zh_CN.md)
+
 SoVITS webUI QuickStart bat, a script for one-click environment configuration and launching webUI for [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc).
 
 </div>
